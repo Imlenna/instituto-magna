@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Magna — Formação Meta-Humana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+    <header class="bg-blue-950 text-white border-b-4 border-amber-500 shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-y-3">
+            <a href="./index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-amber-500 rounded flex items-center justify-center font-serif font-bold text-blue-950 text-xl shadow">IM</div>
+                <div>
+                    <h1 class="font-serif text-xl md:text-2xl font-bold tracking-wide">Instituto Magna</h1>
+                    <p class="text-xs text-blue-200 uppercase tracking-widest">Formação meta-humana</p>
+                </div>
+            </a>
+            <button id="mobileMenuButton" type="button" class="md:hidden border border-blue-700 rounded px-3 py-2 text-sm" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+            <nav id="primary-navigation" class="mobile-navigation hidden w-full flex-col space-y-2 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-6">
+                <a href="./sobre.html" class="hover:text-amber-400 transition">Sobre o Instituto</a>
+                <a href="./cursos.html" class="hover:text-amber-400 transition">Cursos & Disciplinas</a>
+                <a href="./diretoria.html" class="hover:text-amber-400 transition">Diretoria</a>
+                <a href="./contato.html" class="hover:text-amber-400 transition">Contato</a>
+                <a href="./login.html" class="portal-link inline-flex items-center justify-center bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold text-base px-4 py-2.5 sm:px-[1.296rem] sm:py-[0.81rem] rounded-lg shadow-lg transition focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-300/50" aria-label="Acessar o Portal do Aluno">
+                    Portal do Aluno
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-blue-950 via-blue-900 to-pink-950 text-white py-12 md:py-16 px-4 border-b border-blue-900">
+        <div class="max-w-4xl mx-auto text-center space-y-5">
+            <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full">Instituto fundado em 2023</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">Conhecimento, responsabilidade e desenvolvimento de habilidades extraordinárias.</h2>
+            <p class="text-blue-100 text-base md:text-lg max-w-2xl mx-auto font-light">O Instituto Magna orienta e capacita jovens para que desenvolvam suas habilidades e as empreguem em prol do bem comum e da segurança de outras pessoas.</p>
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 pt-3">
+                <a href="./cursos.html" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold px-5 py-3 rounded-lg shadow-lg transition">Conhecer a grade curricular</a>
+                <a href="./diretoria.html" class="bg-blue-900/60 hover:bg-blue-900 text-white border border-blue-700 font-semibold px-5 py-3 rounded-lg shadow transition">Conhecer a diretoria</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-12 space-y-8 md:space-y-12 flex-grow w-full">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8" aria-label="Pilares da formação">
+            <a href="./cursos.html" class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-3 hover:border-amber-500 transition">
+                <span class="w-12 h-12 bg-blue-100 text-blue-950 rounded-lg flex items-center justify-center font-bold text-xl font-serif">01</span>
+                <h3 class="font-serif text-xl font-bold text-blue-950">Superpoderes</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Entendimento, controle e aplicação responsável das habilidades individuais.</p>
+            </a>
+            <a href="./cursos.html" class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-3 hover:border-amber-500 transition">
+                <span class="w-12 h-12 bg-amber-100 text-amber-950 rounded-lg flex items-center justify-center font-bold text-xl font-serif">02</span>
+                <h3 class="font-serif text-xl font-bold text-blue-950">Conhecimentos gerais</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Ciências, história, comunicação, legislação, saúde e atualidades.</p>
+            </a>
+            <a href="./cursos.html" class="bg-white p-6 rounded-lg border border-slate-200 shadow-sm space-y-3 hover:border-amber-500 transition">
+                <span class="w-12 h-12 bg-pink-100 text-pink-950 rounded-lg flex items-center justify-center font-bold text-xl font-serif">03</span>
+                <h3 class="font-serif text-xl font-bold text-blue-950">Habilidades complementares</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Tecnologia, primeiros socorros, investigação e línguas estrangeiras.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-950 text-blue-300 py-6 px-4 border-t border-blue-900 text-center text-sm mt-auto">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Instituto Magna.</p>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-blue-400">
+                <a href="./sobre.html" class="hover:text-white">Sobre</a>
+                <a href="./cursos.html" class="hover:text-white">Cursos</a>
+                <a href="./diretoria.html" class="hover:text-white">Diretoria</a>
+                <a href="./contato.html" class="hover:text-white">Contato</a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./assets/site.js"></script>
+</body>
+</html>

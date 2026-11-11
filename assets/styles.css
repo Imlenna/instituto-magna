@@ -1,0 +1,59 @@
+/* Configuração de fontes e estilo limpo */
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.mobile-navigation a:not(.portal-link) {
+    display: block;
+    padding: 0.65rem 0;
+}
+
+@media (min-width: 768px) {
+    .mobile-navigation a:not(.portal-link) {
+        padding: 0;
+    }
+}
+
+/* Efeito de Scanline (Linhas de monitor antigo / CRT) para o modal secreto */
+.scanline {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0, 0, 0, 0.3) 50%,
+        rgba(0, 0, 0, 0.3)
+    );
+    background-size: 100% 4px;
+}
+
+/* Animação suave para erros de senha */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+/* Formulário de login com tremida em caso de erro */
+form.shake { animation: shake 0.4s ease-in-out; }

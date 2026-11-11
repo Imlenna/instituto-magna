@@ -1,0 +1,6 @@
+node_modules/
+dist/
+Instituto Magna.rar
+.env
+.env.*
+!.env.example

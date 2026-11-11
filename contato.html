@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Instituto Magna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+    <header class="bg-blue-950 text-white border-b-4 border-amber-500 shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-y-3">
+            <a href="./index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-amber-500 rounded flex items-center justify-center font-serif font-bold text-blue-950 text-xl shadow">IM</div>
+                <div>
+                    <h1 class="font-serif text-xl md:text-2xl font-bold tracking-wide">Instituto Magna</h1>
+                    <p class="text-xs text-blue-200 uppercase tracking-widest">Fale Conosco</p>
+                </div>
+            </a>
+            <button id="mobileMenuButton" type="button" class="md:hidden border border-blue-700 rounded px-3 py-2 text-sm" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+            <nav id="primary-navigation" class="mobile-navigation hidden w-full flex-col space-y-2 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-6">
+                <a href="./sobre.html" class="hover:text-amber-400 transition">Sobre o Instituto</a>
+                <a href="./cursos.html" class="hover:text-amber-400 transition">Cursos & Disciplinas</a>
+                <a href="./diretoria.html" class="hover:text-amber-400 transition">Diretoria</a>
+                <a href="./contato.html" class="text-amber-400 font-bold">Contato</a>
+                <a href="./login.html" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold px-4 py-2 rounded shadow transition">Portal do Aluno</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-10 space-y-8 flex-grow w-full">
+        <section class="bg-white rounded-lg border border-slate-200 p-5 sm:p-8 shadow-sm space-y-4 max-w-xl mx-auto">
+            <h2 class="font-serif text-3xl font-bold text-blue-950">Atendimento Acadêmico</h2>
+            <div class="h-1 w-12 bg-amber-500 rounded"></div>
+            <p class="text-sm text-slate-500">Canal de contato para dúvidas sobre processos seletivos e registros.</p>
+            <form class="space-y-4 text-sm">
+                <div>
+                    <label for="contactName" class="block font-bold text-slate-700 mb-1">Nome completo</label>
+                    <input id="contactName" type="text" class="w-full border border-slate-300 rounded p-3">
+                </div>
+                <div>
+                    <label for="contactEmail" class="block font-bold text-slate-700 mb-1">E-mail</label>
+                    <input id="contactEmail" type="email" class="w-full border border-slate-300 rounded p-3">
+                </div>
+                <div>
+                    <label for="contactMessage" class="block font-bold text-slate-700 mb-1">Mensagem</label>
+                    <textarea id="contactMessage" class="w-full border border-slate-300 rounded p-3 min-h-28"></textarea>
+                </div>
+                <button type="button" class="w-full bg-blue-950 text-white font-bold py-3 rounded hover:bg-blue-900 transition">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-950 text-blue-300 py-6 px-4 border-t border-blue-900 text-center text-xs mt-auto">
+        &copy; 2026 Instituto Magna.
+    </footer>
+    <script type="module" src="./assets/site.js"></script>
+</body>
+</html>

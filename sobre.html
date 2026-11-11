@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Instituto — Instituto Magna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+    <header class="bg-blue-950 text-white border-b-4 border-amber-500 shadow-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-y-3">
+            <a href="./index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-amber-500 rounded flex items-center justify-center font-serif font-bold text-blue-950 text-xl shadow">IM</div>
+                <div>
+                    <h1 class="font-serif text-xl md:text-2xl font-bold tracking-wide">Instituto Magna</h1>
+                    <p class="text-xs text-blue-200 uppercase tracking-widest">Sobre o Instituto</p>
+                </div>
+            </a>
+            <button id="mobileMenuButton" type="button" class="md:hidden border border-blue-700 rounded px-3 py-2 text-sm" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+            <nav id="primary-navigation" class="mobile-navigation hidden w-full flex-col space-y-2 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-6">
+                <a href="./sobre.html" class="text-amber-400 font-bold">Sobre o Instituto</a>
+                <a href="./cursos.html" class="hover:text-amber-400 transition">Cursos & Disciplinas</a>
+                <a href="./diretoria.html" class="hover:text-amber-400 transition">Diretoria</a>
+                <a href="./contato.html" class="hover:text-amber-400 transition">Contato</a>
+                <a href="./login.html" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold px-4 py-2 rounded shadow transition">Portal do Aluno</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-10 space-y-8 flex-grow w-full">
+        <section class="bg-white rounded-lg border border-slate-200 p-5 sm:p-8 shadow-sm space-y-4">
+            <p class="text-amber-700 text-xs font-semibold uppercase tracking-widest">Estatuto Institucional</p>
+            <h2 class="font-serif text-3xl font-bold text-blue-950">Nossa missão e história</h2>
+            <div class="h-1 w-12 bg-amber-500 rounded"></div>
+            <p class="text-slate-600 text-sm leading-relaxed">Fundado em 2023, o Instituto Magna orienta e capacita jovens com habilidades extraordinárias, para que desenvolvam seus dons e os empreguem em prol do bem comum e da segurança de outras pessoas.</p>
+            <p class="text-slate-600 text-sm leading-relaxed">O Estatuto define uma formação que busca desenvolver habilidades, caráter, responsabilidade e a capacidade de atuar positivamente na sociedade.</p>
+            <a href="./cursos.html" class="inline-flex text-sm font-semibold text-amber-700 hover:text-amber-800">Consultar a grade curricular →</a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-950 text-blue-300 py-6 px-4 border-t border-blue-900 text-center text-xs mt-auto">
+        &copy; 2026 Instituto Magna.
+    </footer>
+    <script type="module" src="./assets/site.js"></script>
+</body>
+</html>
