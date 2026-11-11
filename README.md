@@ -38,7 +38,5 @@ npm run build
 
 - `index.html`, `sobre.html`, `cursos.html`, `diretoria.html` e `contato.html` — páginas públicas.
 - `login.html` e `painel.html` — acesso e área do aluno.
-- `assets/herois-db.js` — perfis e dados de acesso transcritos de `Juras herois.pdf`.
-- `assets/top-secret.js` — registros pesquisáveis de `DOSSIÊ atualizado(1).pdf`.
 - `assets/aulas-data.js` — grade curricular do Estatuto Institucional e Regimento Interno.
 - As disciplinas selecionadas no painel são salvas por aluno no navegador; a carteirinha pode ser ampliada ao toque ou clique.
